@@ -1,4 +1,4 @@
-import 'package:fw_ticket/fw_ticket.dart';
+import 'package:flutter_ticket/flutter_ticket.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -18,12 +18,13 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              SizedBox(height: 30.0,),
+              SizedBox(
+                height: 30.0,
+              ),
               Ticket(
                 innerRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(10.0),
-                  bottomRight: Radius.circular(10.0)
-                ),
+                    bottomLeft: Radius.circular(10.0),
+                    bottomRight: Radius.circular(10.0)),
                 outerRadius: BorderRadius.all(Radius.circular(10.0)),
                 boxShadow: [
                   BoxShadow(
@@ -39,9 +40,8 @@ class MyApp extends StatelessWidget {
               ),
               Ticket(
                 innerRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10.0),
-                  topRight: Radius.circular(10.0)
-                ),
+                    topLeft: Radius.circular(10.0),
+                    topRight: Radius.circular(10.0)),
                 outerRadius: BorderRadius.all(Radius.circular(10.0)),
                 boxShadow: [
                   BoxShadow(
@@ -101,40 +101,40 @@ class MyApp extends StatelessWidget {
                           ),
                           Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text('Time'),
-                                    FittedBox(
-                                      child: Text(
-                                        '9:00PM',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 18.0),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )),
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text('Time'),
+                                FittedBox(
+                                  child: Text(
+                                    '9:00PM',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )),
                           Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text('Price'),
-                                    FittedBox(
-                                      child: Text(
-                                        '\$15.00  ',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 18.0),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )),
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text('Price'),
+                                FittedBox(
+                                  child: Text(
+                                    '\$15.00  ',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )),
                         ],
                       ),
                       Container(
@@ -145,7 +145,7 @@ class MyApp extends StatelessWidget {
                           child: Text(
                             'BUY TICKETS',
                             style:
-                            TextStyle(color: Colors.white, fontSize: 16.0),
+                                TextStyle(color: Colors.white, fontSize: 16.0),
                           ),
                         ),
                       )
