@@ -1,4 +1,7 @@
 # CHANGE LOG
+## [1.0.1] - 2023-05-11
+* Update description
+
 ## [1.0.0] - 2023-05-10
 * Null safety support
 * New maintener

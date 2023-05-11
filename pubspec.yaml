@@ -1,6 +1,6 @@
 name: flutter_ticket
-description: A Flutter ticket UI widget.
-version: 1.0.0
+description: An awesome flutter library to help you create a ticket UI.
+version: 1.0.1
 homepage: https://github.com/lcsvcn/flutter-ticket
 
 environment:
